@@ -3,7 +3,7 @@ This is a python based tool to block access of a specific user on wifi by mac sp
 
 Provide the target ip, interface name and run test.py
   
-  python test.py
+           python test.py
   
 
 To get the interface list run interfacelist.py
@@ -15,4 +15,4 @@ python interfacelist.py
 Pre-Requisites 
 1. Scapy:
   
-  pip install scapy
+          pip install scapy
